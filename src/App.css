@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.Home-page{
+    display: flex;
+    position: absolute;
+    height:90vh;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.next-btn > img{
+    width: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.next-btn {
+    position: absolute;
+    right: 270px;
+    border: none;
+    background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    padding: 0 200px 0 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Navbar{
+    border: 1px solid black;
+    text-align: end;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.Navbar > ul > a{
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar > ul > a:hover{
+    border-bottom: black 1px solid;
+}
+
+.my-profile{
+    width: 260px;
+    border: 1px solid grey;
+}
+.about{
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: 30% 70%;
+}
+
+
+.left-grid{
+    display: flex;
+    justify-content: center;
+}
+.right-grid{
+    padding: 0 60px 0 40px;
+}
+
+.skills--about{
+    width: 500px;
+    height: 40px;
+    display: flex;
+}
+
+.logo-skills{
+    width: 45px;
+    margin-right: 5px;
+}
+
+.logo-img{
+
+    width: 36px;
+    margin-left: 2px;
 }
