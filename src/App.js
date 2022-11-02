@@ -13,7 +13,7 @@ function App() {
 
       <div className="Navbar container">
           <ul>
-              <Link to="/">Home</Link>
+              <Link to="/my-porfolio">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/social">Social Media</Link>
@@ -21,7 +21,7 @@ function App() {
       </div>
       
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/my-porfolio" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/social" element={<Social/>} />
