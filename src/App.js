@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import About from "./Components/About";
-import Social from "./Components/Social";
+import Contact from "./Components/Contact";
 
 import "./App.css";
 import { Route, Link, Routes } from "react-router-dom";
@@ -17,20 +17,18 @@ function App() {
     <>
 
       <div className="Navbar container">
+          <div className="nav-logo">Logo</div>
           <ul>
-              <Link to="/my-porfolio" onClick={triggerClick}>Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/social">Social Media</Link>
+              <li><a href="#"> About</a></li>
+              <li><a href="#"> Projects</a></li>
+              <li><a href="#"> Contact</a></li>
           </ul>
       </div>
-      
-      <Routes>
-        <Route path="/my-portfolio" element={<Home/>} />
-        <Route path="/about" element={<About/>} /> 
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/social" element={<Social/>} />
-      </Routes>
+      <Home/>
+      <About/>
+      <Projects/>
+      <Contact/>
+      <footer>© Created by&nbsp;<span className="footer--name"> David Bryan Ramboy</span></footer>
     </>
   );
 }

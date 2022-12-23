@@ -1,11 +1,36 @@
+/* 
+    colors: 
+    #2B1077 navbar dark blue
+*/
+
+/* Home */
 .Home-page{
     display: flex;
     position: absolute;
     height:90vh;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.home--section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    border-bottom: 1px solid black;
+
+}
+.home--section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left--section-home > h1{
+    font-size: 45px;
+    color:black;
+}
+.right--section-home > img{
+    width: 100%;
+    
 }
 .next-btn > img{
     width: 40px;
@@ -23,29 +48,57 @@
 }
 
 .Navbar{
-    border: 1px solid black;
+    color: black;
+    background-color: #D9D9D9;
+    border-bottom: 1px solid black;
     text-align: end;
     padding-top: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.Navbar > ul > a{
+.nav-logo{
+    margin-right: auto;
+}
+
+.Navbar > ul {
+    display: flex;
+}
+
+.Navbar > ul > li {
+    list-style: none;
+
+}
+
+.Navbar > ul > li > a{
     text-decoration: none;
-    color: black;
     margin-left: 50px;
+    color: black;
+
 }
 
-.Navbar > ul > a:hover{
-    border-bottom: black 1px solid;
+.Navbar > ul > li > a:hover{
+    border-bottom: rgb(252, 2, 210) 1px solid;
 }
 
 .my-profile{
     width: 260px;
     border: 1px solid grey;
+    height: 350px;
+    border: 1px solid black;
 }
+
 .about{
-    display: grid;
+    height: 100vh;
     padding-top: 100px;
+    border-bottom: 1px solid black;
+
+}
+
+.about-grid{
+    display: grid;
     grid-template-columns: 30% 70%;
 }
 
@@ -72,5 +125,98 @@
 .logo-img{
 
     width: 36px;
-    margin-left: 2px;
+    margin-left: 2px; 
+}
+
+.left--section-home{
+    color: white;
+}
+
+/* Projects Section */
+.projects-section{
+    border-bottom: 1px solid black;
+
+}
+
+.contact-section{
+    border-bottom: 1px solid black;
+
+}
+
+.project--items{
+    margin-bottom: 50px;
+}
+.projects--template{
+    margin-bottom: 10px;
+    border:1px solid black;
+    display: flex;
+}
+
+.projects--template:last-child{
+    margin-bottom: -10px;
+}   
+.projects--image > img{
+   width: 100%;
+}
+.projects--image{
+    display: flex;
+
+    width: 350px;
+    border: 1px solid black;
+}
+.projects--main{
+    padding: 10px 30px;
+}
+.projects--main > p{
+    margin-top: -10px;
+}
+
+.projects--button > button{
+    background-color: transparent;
+    margin-right:4px;
+}
+/* Contact--section */
+.contact-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.contact-section > form{
+    border: 1px solid black;
+    margin: 0 150px;
+    box-shadow: 5px 5px 0px black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section > form > button{
+    justify-self: center;
+    align-self: center;
+    padding: 10px 30px;
+    border-radius: 60px;
+    border: .5px solid black;
+    margin: 10px ;    
+}
+.input--section{
+    display:flex;
+    flex-direction: column;
+}
+
+.input--text, .input--textarea{
+    margin: 4px 40px;
+    border-radius: 6px;
+    border: .1px solid black;
+    padding:10px;
+}
+.input--textarea{
+    padding-bottom: 60px;
+}
+.contact-label > h1{
+    padding: 0 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
