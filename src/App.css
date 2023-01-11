@@ -2,35 +2,82 @@
     colors: 
     #2B1077 navbar dark blue
 */
+@font-face{
+    src: url(../public/fonts/Brolink-Regular.ttf);
+    font-family: brolink;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --border-black:1px solid black;
+    --playfair--font-family:'Playfair Display';
+}
 
 /* Home */
-.Home-page{
-    display: flex;
-    position: absolute;
-    height:90vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.home--section{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 90vh;
-    border-bottom: 1px solid black;
+
+.home-section-main{
+    background-color:#D9D9D9;
+    border: var(--border-black);
 
 }
-.home--section > div{
-    display: flex;
-    justify-content: center;
+
+.home--section{
+    display: grid;
+    grid-template-columns: 55% 45%;
     align-items: center;
-}
-.left--section-home > h1{
-    font-size: 45px;
-    color:black;
-}
-.right--section-home > img{
+    height: 100vh;
     width: 100%;
-    
+    font-family: var(--playfair--font-family);
+}
+.right--section-home{
+    padding-left: 140px;
+    border-left: 1px solid black;
+    height: 300px;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.right--section-home > h3{
+    font-weight: lighter;
+    font-size:1.4rem;
+}
+.right--section-btn{
+
+    padding-top: 30px;
+
+}
+.right--section-btn > a{
+    margin-right: 50px;
+    font-weight: lighter;
+    font-size: .9em;
+    color: black;
+}
+.right--section-btn a:first-child{
+    margin-left: 10px;
+}
+.left--section-home{
+    padding-right: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.intro--home > h1{
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
+    color:black;
+    font-family: var(--playfair--font-family);
+}
+.intro--home > h3{
+    padding: 0 0 0 -100px;
+    margin: 0 0 0 -19px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+
+}
+.intro--home > h3:first-child{
+    margin-bottom: -17px ;
 }
 .next-btn > img{
     width: 40px;
@@ -49,22 +96,35 @@
 
 .Navbar{
     color: black;
-    background-color: #D9D9D9;
-    border-bottom: 1px solid black;
     text-align: end;
-    padding-top: 10px;
     font-weight: bold;
     display: flex;
+    top: 0;
     align-items: center;
     justify-content: flex-end;
+    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #D9D9D9;
+    padding-top: 30px;
 }
-
 .nav-logo{
     margin-right: auto;
+    font-family: brolink;
+    margin-left: 100px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .Navbar > ul {
     display: flex;
+    margin-right: 100px;
+    z-index: 2;
+    align-items: flex-start;
+    align-self: center;
+    line-height: 20px;
+    
 }
 
 .Navbar > ul > li {
@@ -76,36 +136,47 @@
     text-decoration: none;
     margin-left: 50px;
     color: black;
-
+    cursor: pointer;
 }
 
 .Navbar > ul > li > a:hover{
     border-bottom: rgb(252, 2, 210) 1px solid;
 }
-
+/* About section */
 .my-profile{
-    width: 260px;
-    border: 1px solid grey;
-    height: 350px;
-    border: 1px solid black;
+    width: 320px;
+    height: 290px;
+    border: white solid 1px;
+    border-radius: 50%;
+    background: url('../public/Images/me.jpg');
+    background-size: cover;
+    background-position: 0px -30px;
+
 }
 
 .about{
-    height: 100vh;
     padding-top: 100px;
-    border-bottom: 1px solid black;
-
+    padding-bottom: 70px;
+    border-bottom: var(--border-black);
+    color: white  ;
+    background-color: black;
+    border: white solid 1px;
+    height: 100vh;
 }
 
 .about-grid{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 30% 60%;
 }
-
+.about-grid > div{
+    border:1px solid white;
+}
 
 .left-grid{
     display: flex;
     justify-content: center;
+    padding-left: 50px;
+    border-left: 1px white solid;
 }
 .right-grid{
     padding: 0 60px 0 40px;
@@ -125,31 +196,53 @@
 .logo-img{
 
     width: 36px;
-    margin-left: 2px; 
-}
-
-.left--section-home{
-    color: white;
+    margin-left: 2px;   
+    filter: brightness(0) invert(1);
 }
 
 /* Projects Section */
 .projects-section{
-    border-bottom: 1px solid black;
+    border-bottom: var(--border-black);
+    background-color: black;
+    position: relative;
+    height: 900px;
+}
 
+.inner-projects{
+    background-color: #D9D9D9;
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+  clip-path: polygon(0 5%, 100% 0, 100% 75%, 0 80%);
+}
+
+.project--card{
+    padding: 100px 0;
+    padding-bottom: 400px;
+}
+
+.project--card > h1{
+    text-align: center;
 }
 
 .contact-section{
-    border-bottom: 1px solid black;
+    border-bottom:var(--border-black);
 
 }
 
 .project--items{
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .projects--template{
     margin-bottom: 10px;
-    border:1px solid black;
+    border:var(--border-black);
     display: flex;
+    width: 700px;
+    height: 150px;
 }
 
 .projects--template:last-child{
@@ -161,11 +254,12 @@
 .projects--image{
     display: flex;
 
-    width: 350px;
-    border: 1px solid black;
+    width: 290px;
+    border: var(--border-black);
 }
 .projects--main{
-    padding: 10px 30px;
+    padding: 0px 30px;
+    font-size: 13px;
 }
 .projects--main > p{
     margin-top: -10px;
@@ -177,12 +271,16 @@
 }
 /* Contact--section */
 .contact-section{
-    padding-top: 70px;
+      background: url('../public/Images/BgCloud.jfif') no-repeat ;
+    background-size:cover;
+    background-position: 5% 70%;
+    padding-top: 280px;
     padding-bottom: 70px;
+    background-color: #D9D9D9;
 }
 
 .contact-section > form{
-    border: 1px solid black;
+    border: var(--border-black);
     margin: 0 150px;
     box-shadow: 5px 5px 0px black;
     justify-content: center;
@@ -195,7 +293,9 @@
     padding: 10px 30px;
     border-radius: 60px;
     border: .5px solid black;
-    margin: 10px ;    
+    margin: 10px;    
+    cursor: pointer;
+
 }
 .input--section{
     display:flex;
@@ -211,6 +311,7 @@
 .input--textarea{
     padding-bottom: 60px;
 }
+
 .contact-label > h1{
     padding: 0 40px;
 }
@@ -219,4 +320,6 @@ footer{
     display: flex;
     justify-content: center;
     padding: 10px 0;
-}
+    color: white;
+    border: 1px red solid;
+}   

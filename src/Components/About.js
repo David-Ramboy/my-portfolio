@@ -2,10 +2,17 @@ import React from "react";
 
 export default function About(){
     return(
-        <div className="about container">
+        <div className="about container" id="about">
             <div className="about-grid"> 
+                <div className="page--navigation">
+                    <h1>Skills</h1>
+                </div>
                 <div className="left-grid grid">
-                    <img src="./Images/me.jpg" className="my-profile" alt="my-picture"/>
+                    {/* <img src="./Images/me.jpg" className="my-profile" alt="my-picture"/> */}
+                
+                    <div className="my-profile">
+                        
+                    </div>
                 </div>
                 <div className="right-grid grid">
                     <h1>Aspiring to become Front-end developer</h1>
@@ -18,16 +25,6 @@ export default function About(){
                     
                 </div>
             </div>
-            <div>
-                <p>Skills</p>
-                <div className="skills--about">
-                    <div className="logo-skills"><img src="./Logos/css.png" alt="css" className="logo-img"/></div>
-                    <div className="logo-skills"><img src="./Logos/html.png" alt="hmtl" className="logo-img"/></div>
-                    <div className="logo-skills"><img src="./Logos/js.png" alt="JS" className="logo-img"/></div>
-                    <div className="logo-skills"><img src="./Logos/react.png" alt="React" className="logo-img"/></div>
-                </div>
-            </div>
-            
         </div>
     )
 }

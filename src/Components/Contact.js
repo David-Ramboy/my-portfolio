@@ -7,7 +7,7 @@ export default function Contact(){
     }
 
     return(
-        <div className='contact-section container'>
+        <div className='contact-section container' id="contacts">
             <form onSubmit={handleSubmit}>
                 <label className='contact-label'>
                     <h1> Contact me </h1>
