@@ -4,7 +4,7 @@ export default function ProjectsTemplate(item){
     return(
         <div className="projects--template">
             <div className="projects--image">
-                <img src="./Images/me.jpg" alt="image here"/>
+                <img src={`${item.images.img}`}alt="image here"/>
             </div>
             <div className="projects--main">
                 <h1>{item.title}</h1>
@@ -12,7 +12,7 @@ export default function ProjectsTemplate(item){
                 
                 <div className="projects--button">
                     <button>Visit</button>
-                    <button>Github</button>
+                    <a href={item.githubLink}>Github</a>
                 </div>
 
             </div>
