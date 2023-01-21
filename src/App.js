@@ -8,6 +8,7 @@ import Home from "./Components/Home";
 import Skills from "./Components/Skills";
 
 import "./App.css";
+import "./media.css"
 import { Route, Link, Routes } from "react-router-dom";
 
 function App() {
