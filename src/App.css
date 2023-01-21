@@ -13,6 +13,11 @@
     src: url(../public/fonts/Brolink-Regular.ttf);
     font-family: brolink;
 }
+
+@font-face{
+    src: url(../public/fonts/Inter-Regular.ttf);
+    font-family: Inter;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 :root{
     --border-black:1px solid black;
@@ -34,6 +39,9 @@
     width: 100%;
     font-family: var(--playfair--font-family);
 }
+.home-section-logos{
+    filter: invert(42%) hue-rotate(87deg) brightness(50%) contrast(119%);
+}
 .right--section-home{
     padding-left: 140px;
     border-left: 1px solid #1b1b1b;
@@ -42,6 +50,9 @@
     margin-top: 60px;
     flex-direction: column;
     justify-content: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
 
 }
 .right--section-home > h3{
@@ -92,6 +103,12 @@
 .next-btn > img{
     width: 40px;
 }
+.home-intro-facebook{
+    width: 27px;
+    margin-bottom: 2px;
+}
+
+
 
 .next-btn {
     position: absolute;
@@ -136,6 +153,9 @@
     align-items: flex-start;
     align-self: center;
     line-height: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
     
 }
 
@@ -154,14 +174,26 @@
 .Navbar > ul > li > a:hover{
     border-bottom: rgb(255, 66, 66) 1px solid;
 }
+.navbar-hamburger{
+    cursor: pointer;
+    margin-bottom: 4px;
+    display: none;
+}
+
+.bar{
+    background-color: #d6d6d6;
+    width: 45px;
+    height: 3px;
+    margin: 8px auto;
+
+}
 /* About section */
 .my-profile{
     width: 270px;
     height: 270px;
     border-radius: 50%;
-    background: url('../public/Images/me.jpg');
+    background: url('../public/Logos/david.JPG') no-repeat;
     background-size: cover;
-    background-position: 0px -30px;
     margin-right: 31px;
     box-shadow: 0 0 20px rgb(44, 44, 44), -20px 0 80px rgb(0, 0, 0);
 }
@@ -171,9 +203,15 @@
     padding-bottom: 70px;
     color: #e2e2e2;
     height: 55vh;
+    font-family: Inter,sans-serif;
+    font-weight:100;
+    font-size: 1rem;
 }
 .about--text{
     justify-self:center;
+    font-family: Inter, sans-serif;
+    font-weight:400;
+    font-size: 1rem;
 }
 .about-grid{
     display: grid;
@@ -219,6 +257,8 @@
     color: #e2e2e2;
     height: 60vh;
     align-items: center;
+    font-family: Inter, sans-serif;
+    
 
 }
 .left--skills > div{
@@ -281,6 +321,8 @@
 .projects-section{
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     background-color: #ffff;
+    font-family: Inter, sans-serif;
+
 }
 
 
@@ -291,7 +333,8 @@
 
 .project--card > h1{
     text-align: center;
-    border-bottom: #1b1b1b 1px solid;
+    border-bottom: #aaaaaa .5px solid;
+    padding-bottom: 10px;
 }
 
 
@@ -306,8 +349,9 @@
     display: grid;
     grid-template-columns: 35% 65%;
     width: 900px;
-
+    border: 1px solid #d6d6d6;
     height: 200px;
+    border-radius: 10px;
 }
 
 .projects--template:last-child{
@@ -315,50 +359,98 @@
 }   
 .projects--image{
     height: 100%;
+    width: 100%;
+    
 }
 .projects--image > img{
    width: 100%;
    height: 100%;
    padding: 0;
+    border-radius: 10px;
 }
 
 .projects--main{
     padding: 0px 30px;
     font-size: 13px;
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
 }
+
+.projects--main > *{
+    margin: 0;
+}
+
+.projects--main> h1{
+    align-self: flex-end;
+}
+
 .projects--main > p{
-    margin-top: -10px;
+    padding: 20px 10px 20px 10px;
 }
+
+.projects--button{
+    padding-left: 10px;
+}
+
+.projects--button > a{
+    text-decoration: none;
+    color: #1b1b1b;
+    border: 1px solid black;
+    padding: 3px 8px;
+    cursor: pointer;
+
+}
+
+.projects--button > a:hover{
+    background-color:#1b1b1b;
+    color: #fff;
+}   
+
 
 .projects--button > button{
     background-color: transparent;
     margin-right:4px;
 }
 .projects--seemore{
-    color: red;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+.projects-btn-visit{
+    margin-right: 10px;
+}
+.ps-seemore{
+    cursor: pointer;
+    text-decoration: none;
+    color: #1b1b1b;    
+}
+
+.projects--seemore > p:hover{
+    border-bottom:rgb(255, 66, 66) 1px solid ;
+}
+
 /* Contact--section */
 .contact-section{
     padding-bottom: 70px;
     padding-top: 120px;
+    font-family: Inter, sans-serif;
+
 
 }
 
 .contact-section > form{
-    border: white 1px solid;
-    margin: 0 150px;
-    box-shadow: 5px 5px 0px white;
+    border: #e2e2e2 1px solid;
+    margin: 0 250px;
+    box-shadow: 5px 5px 0px #e2e2e2;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.contact-section > form > button{
+.contact-section > form > input{
     justify-self: center;
     align-self: center;
     padding: 10px 30px;
     border-radius: 60px;
-    border: .5px solid white;
+    border: .5px solid #e2e2e2;
     margin: 10px;    
     cursor: pointer;
 
@@ -388,5 +480,45 @@ footer{
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    font-family: Inter, sans-serif;
     color: white;
 }   
+
+@media(max-width: 500px){
+    .navbar-hamburger{
+        display: block;
+        margin-right: 50px;
+    }
+    .Navbar{
+        width: 100%;
+
+    }
+    .Navbar > .navbar--links{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 60px;
+        right: -100px;
+        background-color: #1b1b1b;
+        justify-content: space-between;
+        width: 100%;
+        height: 200px;
+        border: 1px white solid;
+    }
+   
+    .navbar--links > li:first-child{
+        margin-top: 20px;
+    }
+    .navbar--links > li:last-child{
+        margin-bottom: 20px;
+    }
+
+    .navbar--links > li:hover{
+        border-bottom: #e2e2e2 1px solid;
+    }
+    .Navbar> .navbar-links-none{
+        display: none;
+    }
+
+    
+}

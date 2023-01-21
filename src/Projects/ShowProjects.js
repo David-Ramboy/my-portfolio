@@ -7,7 +7,7 @@ export default [
             img: "./Images/Projects/HerovsMonsters(1).jpg"
         },
         githubLink: "https://github.com/David-Ramboy/Zombie-Unity.git",
-        linkLive: ""
+        linkLive: "https://youtu.be/gXm6ubDOatE"
     }, 
     {   
         id: 2,
@@ -17,7 +17,7 @@ export default [
             img: "./Images/Projects/musicPlayer.jpg"
         },
         githubLink: "https://github.com/David-Ramboy/Music-Player.git",
-        linkLive: ""
+        linkLive: "https://music-player-github-io.pages.dev/"
     }, 
     { 
         id: 3,
@@ -27,7 +27,7 @@ export default [
             img: "./Images/Projects/BookList.jpg"
         },
         githubLink: "https://github.com/David-Ramboy/Book-List",
-        linkLive: ""
+        linkLive: "https://david-ramboy.github.io/deploye.github.io/"
     }, 
     { 
         id: 4,
@@ -37,7 +37,7 @@ export default [
             img: "./Images/Projects/Drawingapp.jpg"
         },
         githubLink: "https://github.com/David-Ramboy/Drawing-App",
-        linkLive: ""
+        linkLive: "https://drawing-app-github-io.pages.dev/Drawing-App/"
     },{
         id: 5,
         title : "Jack n Poy",
@@ -46,7 +46,7 @@ export default [
             img: "./Images/Projects/JacknPoy.jpg"
         },
         githubLink: "https://github.com/David-Ramboy/Jack-n-Poy",
-        linkLive: ""
+        linkLive: "https://164109db.jack-n-poy.pages.dev/"
     }
     
 ]

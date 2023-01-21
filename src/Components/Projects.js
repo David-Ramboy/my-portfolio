@@ -25,7 +25,7 @@ export default function Projects(){
                    {addProjects}
                 </div>
                 <div className="projects--seemore">
-                {addProjects.length <= 4 && <p onClick={addMoreProjects}>See more</p> }
+                {addProjects.length <= 4 && <p onClick={addMoreProjects} className="ps-seemore">See more</p> }
                 </div>
             </div>
           </div>
