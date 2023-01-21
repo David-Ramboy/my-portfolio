@@ -131,7 +131,6 @@
     position: -webkit-sticky;
     position: fixed;
     width: 100%;
-    z-index: 1000;
     background-color: #1b1b1b;
     padding-top: 30px;
     border-bottom: 1px solid #e2e2e2;
@@ -439,7 +438,6 @@
 
 .contact-section > form{
     border: #e2e2e2 1px solid;
-    margin: 0 250px;
     box-shadow: 5px 5px 0px #e2e2e2;
     justify-content: center;
     display: flex;
@@ -484,13 +482,17 @@ footer{
     color: white;
 }   
 
-@media(max-width: 500px){
+@media only screen and (max-width: 500px){
+    
     .navbar-hamburger{
         display: block;
         margin-right: 50px;
     }
     .Navbar{
         width: 100%;
+        position: sticky;
+        border: 1px white solid;
+
 
     }
     .Navbar > .navbar--links{
@@ -519,6 +521,34 @@ footer{
     .Navbar> .navbar-links-none{
         display: none;
     }
-
+/* home */
+    .home--section{
+        display: flex;
+        flex-direction: column;
+    }
+/* about */
+    .about-grid{
+        display: flex;
+        flex-direction: column;
+        
+    }
+/* skills */
+    .skills--section{
+        display: flex;
+        flex-direction: column;
     
+    }
+    .left--skills{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    /* projects */
+    .projects--template{
+        display: flex;
+        flex-direction: column;
+    
+    }
+/* contact */
 }
