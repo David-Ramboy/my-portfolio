@@ -5,7 +5,7 @@
     }   
     .navbar-hamburger{
         display: block;
-        margin-right: 50px;
+        margin-right: 36px;
     }
     .Navbar{
         width: 100%;
@@ -91,11 +91,9 @@
         padding: 0;
         margin: 0;
     }
-    .about-grid > div{
-        border: #e2e2e2 1px solid;
-    }
+    .about-grid > .my-profile{
+    }   
     .about{
-        border: #e2e2e2 1px solid;
         padding: 0;
         height: 70vh;
     }
@@ -111,6 +109,7 @@
         
     }
     .left-grid{
+        border: none;
         padding: 0;
         flex-direction: column;
         align-items: center;
@@ -119,25 +118,92 @@
         height: 100%;
     }
 /* skills */
+    
     .skills--section{
         display: flex;
         flex-direction: column;
-    
+        height: 100vh;
+        
     }
+    
     .left--skills{
         display: flex;
         flex-direction: column;
+        order: 2;
     
+    }
+    .skills--name{
+        order: 1;
+    }
+    .right-skills-text{
+        border: none;
+
+    }
+    .left--skills >div {
+        margin: 0px;
+
+    }
+    .left--skills > div:nth-child(2){
+        margin: 10px 0;
+        margin-left: 140px;
+    }
+    .web--skills{
+        padding: 0;
+        margin: 0px;
+    }
+    .project--card{
+        border: red 1px solid;
+
+    }
+    /* projects */
+    .projects-section{
+        border: red 1px solid;
+        padding:0;
+    }
+ 
+    
+    .projects--template{
+
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+        width: 200px;
+        min-height: 300px;
     }
 
-    /* projects */
-    .projects--template{
-        display: flex;
-        flex-direction: column;
-    
+    .project--card > h1{
+        font-size: 1.5rem;
+        margin-top: 100px;
     }
-/*  */
+    .project--card > div:last-child {
+        margin-bottom: 100px;
+    }
+    .projects--main > h1{
+        font-size: .9rem;
+    }
+    .projects--main > p{
+        font-size: .6rem;
+
+
+    }
+    .main-projects > div{
+        padding: 0;
+    }
+    .skills--name > p {
+        font-size: .7rem;
+
+    }
+    .skills--name > h3{
+        font-size: .9rem;
+    }
+/* contact */
+    .contact-section >form{
+        margin: 10px 10px;
+
+
+    }
     .contact-section{
         padding: 0;
     }
+
 }

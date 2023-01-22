@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           <div className="right--section-home">
               <h3>Welcome to my Portfolio</h3>
               <div className='right--section-btn'>
-                <a href='#{void}'>Check my Works</a>
+                 <Link to="projects" spy={true} smooth={true} offset={0} duration={500} >Check my works</Link>
                 <a href='./Images/resume.pdf' download >Resume</a>
               </div>
           </div>
