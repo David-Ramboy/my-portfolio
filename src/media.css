@@ -53,6 +53,7 @@
         display: grid;
         grid-template-columns: none;
         grid-template-rows: 60% 40%;
+        height: 100vh;
     }
     .home--section > div{
         margin: 0;
@@ -78,9 +79,14 @@
         justify-content: 
         flex-end;
     }
+    .home-section-logos{
+        margin-bottom: 10px;
+    }
     .right--section-home{
         display: flex;
         justify-content: flex-start;
+
+        z-index: 0;
     }
 /* about */
 
@@ -134,7 +140,7 @@
     .left--skills{
         display: flex;
         flex-direction: column;
-        order: 2;
+        order: 0;
     
     }
     .skills--name{
@@ -142,6 +148,7 @@
     }
     .right-skills-text{
         border: none;
+        z-index: 0;
 
     }
     .left--skills >div {
@@ -156,13 +163,9 @@
         padding: 0;
         margin: 0px;
     }
-    .project--card{
-        border: red 1px solid;
-
-    }
+   
     /* projects */
     .projects-section{
-        border: red 1px solid;
         padding:0;
     }
  
