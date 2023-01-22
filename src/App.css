@@ -517,6 +517,8 @@ footer{
 .hidden{
     opacity: 0;
     filter: blur(0);
+    transition: all 1s;
+
     transform: translateX(100%);
 
 }
@@ -524,6 +526,7 @@ footer{
 .skill-show{
     opacity: 1;
     transition: all 1s;
+
     transform: translateX(0);
 
 }
@@ -531,6 +534,8 @@ footer{
 .skill-hidden{
     opacity: 0;
     filter: blur(0);
+    transition: all 1s;
+
     transform: translateX(100%);
 
 }
