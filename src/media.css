@@ -53,7 +53,6 @@
         display: grid;
         grid-template-columns: none;
         grid-template-rows: 60% 40%;
-        height: 100vh;
     }
     .home--section > div{
         margin: 0;
@@ -166,9 +165,11 @@
    
     /* projects */
     .projects-section{
-        padding:0;
+        padding:.5px 0px;
+    
     }
- 
+    
+    
     
     .projects--template{
 
