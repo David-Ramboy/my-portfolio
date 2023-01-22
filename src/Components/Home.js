@@ -1,12 +1,29 @@
-import React from 'react'
+import React,{useRef, useEffect, useState} from 'react'
 import {Link} from 'react-scroll'
+import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
+  const {ref, inView} = useInView();
+
+
+  // const myRef = useRef();
+  // const [isInvisible, setIsInvisible] = useState();
+  // console.log(isInvisible, 'entry')
+
+  // useEffect(()=>{
+  //   const observer = new IntersectionObserver((entries)=>{
+  //       const entry = entries[0];
+  //       setIsInvisible(entry.isIntersecting)
+  //   })
+  //   observer.observe(myRef.current)
+  // },[])
+  console.log(inView)
+
   return (
     <div className="home-section-main" id="home">
-      <section className="home--section">
-          <div className="left--section-home">
-            <div className='intro--home'>
+      <section ref={ref} className={`home--section `  }>
+          <div className={`left--section-home ${inView ? 'show' : 'hidden'}`}>
+            <div className={`intro--home `}>
               <h3>Hello I'm </h3>
                 <h1> David Bryan </h1>
               <h3>Aspiring to Becoming Web Developer</h3>  

@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <ul className={`navbar--links ${show ? 'navbar-links-none': ''}`}>
             <li>
-              <Link to="home" spy={true} smooth={true} offset={-100} duration={500} > Home</Link>
+              <Link to="home" spy={true} smooth={true} offset={-100} duration={500}  className='Link'> Home</Link>
             </li>
             <li>
               <Link to="about" spy={true} smooth={true} offset={50} duration={500} > About</Link>

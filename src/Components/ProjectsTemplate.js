@@ -1,8 +1,11 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 
 export default function ProjectsTemplate(item){
+  const {ref: projects, inView: projectsView} = useInView();
+    
     return(
-        <div className="projects--template">
+        <div ref={projects} className={`projects--template ${projectsView ? 'skill-show' :'skill-hidden'} `}>
             <div className="projects--image">
                 <img src={`${item.images.img}`}alt="image here"/>
             </div>

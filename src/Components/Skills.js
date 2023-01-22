@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { useInView } from 'react-intersection-observer';
 export default function Skills() {
+  const {ref: skills, inView: skillsInview} = useInView();
   return (
     <div className='skills--section'>
-      <div className='left--skills'>
-          <div className='box--skills web--skills'>
+      <div  className={`left--skills `}>
+          <div ref={skills} className={` box--skills web--skills ${skillsInview ? 'skill-show' :'skill-hidden'}`}>
             <div className='logo-skills'>
 
             </div>
@@ -17,7 +18,7 @@ export default function Skills() {
               
             </div>
           </div>
-          <div className='box--skills tools--skills'>
+          <div className={`box--skills tools--skills ${skillsInview ? 'skill-show' :'skill-hidden'}`}>
             <div className='logo-skills'>
 
             </div>
@@ -30,7 +31,7 @@ export default function Skills() {
               
             </div>
           </div> 
-          <div className='box--skills game-dev-skills'>
+          <div className={`box--skills game-dev-skills ${skillsInview ? 'skill-show' :'skill-hidden'}`}>
             <div className='logo-skills'>
 
             </div>
