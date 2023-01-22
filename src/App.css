@@ -24,9 +24,7 @@
     --playfair--font-family:'Playfair Display';
 }
 
-body{
-    overflow-x: hidden;
-}
+
 /* Home */
 
 
@@ -519,7 +517,7 @@ footer{
     filter: blur(0);
     transition: all 1s;
 
-    transform: translateX(100%);
+    transform: translateX(20%);
 
 }
 
@@ -536,7 +534,22 @@ footer{
     filter: blur(0);
     transition: all 1s;
 
-    transform: translateX(100%);
+    transform: translateX(40%);
+
+}
+
+.project-show{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0);
+
+}
+
+.project-hidden{
+    opacity: 0;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(10%);
 
 }
 
