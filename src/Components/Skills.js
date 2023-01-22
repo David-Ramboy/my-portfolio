@@ -5,11 +5,11 @@ export default function Skills() {
   return (
     <div className='skills--section'>
       <div  className={`left--skills `}>
-          <div ref={skills} className={` box--skills web--skills ${skillsInview ? 'skill-show' :'skill-hidden'}`}>
+          <div className={` box--skills web--skills ${skillsInview ? 'skill-show' :'skill-hidden'}`}>
             <div className='logo-skills'>
 
             </div>
-            <div className='skills--name'>
+            <div ref={skills} className='skills--name'>
               <h3>WEB DEVELOPMENT</h3>
               <p>HTML</p>
               <p>CSS</p>
