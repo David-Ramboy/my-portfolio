@@ -11,6 +11,16 @@ export default [
     }, 
     {   
         id: 2,
+        title : "Marvel Web page",
+        description: "Marvel Webpage design using css html."
+        ,images: {
+            img: "./Images/Projects/marvel-page.jpg"
+        },
+        githubLink: "https://github.com/David-Ramboy/Movie-page-design",
+        linkLive: "https://movie-page-design.pages.dev/"
+    }, 
+    {   
+        id: 2,
         title : "Music Player",
         description: "A small project music player created using Javascript css html."
         ,images: {
