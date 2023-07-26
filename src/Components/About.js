@@ -15,9 +15,7 @@ export default function About(){
                     </div>
                 </div>
                 <div className="right-grid grid">
-                    <p>I am <b>David Bryan A. Ramboy</b>, 4th year College at University of Rizal System in Binangonan Rizal, Taking Bachelor of Science in Information Technology,I want express my creativity in design and coding, combination of logic and art i can create a meaningful websites, and apply it to the realworld. As i am looking for Internship i want to be part of your company. 
-                    </p>
-
+                    <p>Hello, I am <b>David Bryan A. Ramboy</b>, a graduate of the University of Rizal System in Binangonan, Rizal, where I completed my Bachelor of Science in Information Technology. I am passionate about expressing my creativity in design and coding, where I can combine logic and art to create meaningful websites that can be applied to the real world. </p>
                     
                 </div>
             </div>

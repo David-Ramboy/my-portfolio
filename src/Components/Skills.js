@@ -14,7 +14,12 @@ export default function Skills() {
               <p>HTML</p>
               <p>CSS</p>
               <p>JAVASCRIPT</p>
+              <p>PYTHON</p>
+              <p>MONGODB</p>
               <p>REACTJS</p>
+              <p>DJANGO</p>
+              <p>VUEJS</p>
+
               
             </div>
           </div>

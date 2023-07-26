@@ -5,10 +5,6 @@ import ProjectsTemplate from "./ProjectsTemplate";
 
 export default function Projects(){
     
-     
-
-    console.log(ShowProjects.filter((elem, idx)=> console.log(elem)));
-
     const [addProjects, setAddProjects] = useState(ShowProjects.filter((elem, idx) => idx < 4).map(elem => { return <ProjectsTemplate {...elem}  key={elem.id}/>}));
 
     function addMoreProjects(){

@@ -26,7 +26,7 @@ const Home = () => {
             <div className={`intro--home `}>
               <h3>Hello I'm </h3>
                 <h1> David Bryan </h1>
-              <h3>Aspiring to Becoming Web Developer</h3>  
+              <h3>Software Developer</h3>  
             </div>
             <div className='home-section-logos'>
               <a href='https://github.com/David-Ramboy'><img src='../Logos/Github.svg' alt='github'/></a>
